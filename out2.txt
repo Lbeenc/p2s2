@@ -1,0 +1,6 @@
+t2 token xyz16 1
+t1 token "53 1
+t3 token $ 1
+t3 token & 2
+t2 token S228 2
+EOFTk

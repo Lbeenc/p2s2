@@ -1,0 +1,31 @@
+P2 Scanner FSA Table
+
+Character classes:
+0 = letter
+1 = digit
+2 = '"' or '#'
+3 = t3 character ($ % & ' ( ) * + , - . /)
+4 = whitespace
+5 = EOF
+6 = other
+
+States:
+0 = start
+1 = reading letters for t2
+2 = reading digits for t2 (accepting)
+3 = saw '"' or '#'
+4 = reading digits for t1 (accepting)
+
+Transitions used in code:
+
+          L   D   P   T3  WS  EOF OTH
+state 0:  1  err  3  acc  0  eof err
+state 1:  1   2  err err err err err
+state 2: err  2  acc acc acc acc acc
+state 3: err  4  err err err err err
+state 4: err  4  acc acc acc acc acc
+
+Accepted tokens:
+- state 2 => t2 token
+- state 4 => t1 token
+- state 0 on t3 => t3 token

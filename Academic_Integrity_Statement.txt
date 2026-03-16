@@ -1,0 +1,12 @@
+Academic Integrity Statement
+
+Student: Curtis Been
+Project: P2 Scanner
+Course: CS 4280
+
+I used ChatGPT as a tool to help me understand the project requirements,
+organize the scanner logic, and review the deterministic finite state automaton
+approach. I reviewed, modified, and take responsibility for the submitted code.
+
+Date accessed: March 16, 2026
+Resource used: ChatGPT
